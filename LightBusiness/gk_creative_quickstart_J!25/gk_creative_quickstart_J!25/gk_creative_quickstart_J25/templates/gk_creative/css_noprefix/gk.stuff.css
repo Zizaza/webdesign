@@ -1,0 +1,631 @@
+/*
+#------------------------------------------------------------------------
+# Creative - July Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+
+/*
+ * GK Parallax engine
+ */
+
+#gkHeaderTop .gk-parallax {
+	margin-top: -105px;
+} 
+
+.gk-parallax {
+	background: #f7f7f7;
+	min-height: 100px;
+	margin: 0 -20px;
+	overflow: hidden;
+	position: relative;
+}
+
+.gk-parallax-wrap {
+	height: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.gk-parallax > div > * {
+	opacity: 0;
+	transition: opacity 0.3s ease-out;
+}
+
+.gk-parallax.loaded > div > * {
+	opacity: 1;
+}
+
+.gkp-element {
+	position: absolute;
+	text-indent: -9999px;
+}
+
+.gkp-tablet,
+.gkp-mobile {
+	left: -9999px;
+	position: absolute;
+}
+
+/* elements */
+.loaded.gkp-background-top {
+	background: transparent url('../images/parallax/background_top.jpg') no-repeat center 0!important;
+}
+
+.loaded.gkp-background-bottom {
+	background: transparent url('../images/parallax/background_bottom.jpg') no-repeat center 0!important;
+}
+
+.gkp-island {
+	background: transparent url('../images/parallax/island.png') no-repeat 0 0;
+	height: 422px;
+	width: 855px;
+}
+
+.gkp-birds {
+	background: transparent url('../images/parallax/birds.png') no-repeat -50px 0;
+	height: 466px;
+	width: 1000px;
+}
+
+.gkp-crane1 {
+	background: transparent url('../images/parallax/cranes.png') no-repeat 0 0;
+	height: 345px;
+	width: 217px;
+}
+
+.gkp-crane2 {
+	background: transparent url('../images/parallax/cranes.png') no-repeat 0 bottom;
+	height: 139px;
+	width: 217px;
+}
+
+.gkp-crane3 {
+	background: transparent url('../images/parallax/cranes.png') no-repeat -38px -355px;
+	height: 82px;
+	width: 98px;
+}
+
+.gkp-ballon1 {
+	background: transparent url('../images/parallax/ballons.png') no-repeat 0 bottom;
+	height: 248px;
+	width: 142px;
+}
+
+.gkp-ballon2 {
+	background: transparent url('../images/parallax/ballons.png') no-repeat 0 -2px;
+	height: 64px;
+	width: 72px;
+}
+
+.gkp-ballon3 {
+	background: transparent url('../images/parallax/ballons.png') no-repeat -72px -2px;
+	height: 84px;
+	width: 70px;
+}
+
+.gkp-ballon4 {
+	background: transparent url('../images/parallax/ballons.png') no-repeat 0 -141px;
+	height: 116px;
+	width: 142px;
+}
+
+.gkp-ballon5 {
+	background: transparent url('../images/parallax/ballons.png') no-repeat 0 -72px;
+	height: 64px;
+	width: 70px;
+}
+
+.gkp-cloud_front1 {
+	background: transparent url('../images/parallax/clouds.png') no-repeat 0 0;
+	height: 164px;
+	width: 370px;
+}
+
+.gkp-cloud_front2 {
+	background: transparent url('../images/parallax/clouds.png') no-repeat -250px -160px;
+	height: 43px;
+	width: 98px;
+}
+
+.gkp-cloud_front3 {
+	background: transparent url('../images/parallax/clouds.png') no-repeat 0 -300px;
+	height: 92px;
+	width: 215px;
+}
+
+.gkp-cloud_front4 {
+	background: transparent url('../images/parallax/clouds.png') no-repeat -32px -253px;
+	height: 28px;
+	width: 48px;
+}
+
+.gkp-cloud_front5 {
+	background: transparent url('../images/parallax/clouds.png') no-repeat 0 bottom;
+	height: 76px;
+	width: 175px;
+}
+
+.gkp-cloud_back1 {
+	background: transparent url('../images/parallax/clouds.png') no-repeat -250px -295px;
+	height: 32px;
+	width: 100px;
+}
+
+.gkp-cloud_back2 {
+	background: transparent url('../images/parallax/clouds.png') no-repeat -95px -204px;
+	height: 96px;
+	width: 192px;
+}
+
+.gkp-circle,
+.gkp-square {
+	background: #ef7f7f;
+	height: 128px;
+	width: 128px;
+}
+
+.gkp-circle {
+	background: #7fb3ef;
+	border-radius: 50%;
+}
+
+/*
+ * News Show Pro GK4
+ */
+.nsp {
+	position: relative;
+}
+.nspMain {
+	overflow: hidden;
+}
+.nspBotInterface,
+.nspTopInterface {
+	overflow: hidden;
+	clear: both;
+}
+.nspBotInterface div,
+.nspTopInterface div {
+	float: right;
+}
+.nsp .nspTopInterface div {
+	position: absolute;
+	right: 20px;
+	padding: 0 3px;
+	top: 18px;
+}
+.nspPagination {
+	list-style-type: none !important;
+	margin: 6px 0 0 !important;
+	padding: 0 !important;
+	float: left;
+}
+.nspPagination li {
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px 0 0 !important;
+	background: #ddd;
+	border-radius: 50%;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.nspPagination li:hover,
+.nspPagination li.active {
+	background: #6a9edb;
+}
+.nspNext,
+.nspPrev {
+	float: left;
+	width: 13px;
+	height: 13px;
+	margin: 4px 0 0 4px;
+	background: url('../images/style1/nsp_interface.png') no-repeat -13px 0;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.nspPrev {
+	background-position: 0 0;
+}
+.nspNext:hover,
+.nspPrev:hover {
+	background-position: -13px -13px;
+}
+.nspPrev:hover {
+	background-position: 0 -13px;
+}
+.nspCounter {
+	float: left;
+	margin: 0 0 0 8px;
+	padding: 1px 4px;
+	border: 1px solid #ddd;
+	border-radius: 2px 2px;
+	color: #878787;
+	font-size: 9px;
+	cursor: pointer;
+}
+.nspArts {
+	overflow: hidden;
+}
+.nspArtPage {
+	float: left;
+}
+.nspArt {
+	float: left;
+	box-sizing: border-box;
+}
+.nspArt div {
+	overflow: hidden;
+}
+h4.nspHeader {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+.nspArt .gkResponsive + h4.nspHeader {
+	padding-top: 10px;
+}
+.nspArt h4.nspHeader a {
+	color: #212121;
+	text-decoration: none;
+}
+.nspArt h4.nspHeader a:active,
+.nspArt h4.nspHeader a:focus,
+.nspArt h4.nspHeader a:hover {
+	color: #6a9edb;
+}
+.nspArt img.nspImage {
+	border: none;
+}
+.nspArt img {
+	transition: all 0.4s ease;
+}
+.nspArt .nspImageWrapper {
+	overflow: hidden;
+}
+.nspArt p.nspText {
+	float: none;
+	font-size: 11px;
+}
+.nspArt p.nspInfo {
+	color: #bbb;
+	font-size: 11px;
+	font-style: italic;
+	font-weight: 300;
+}
+.nspArt .tleft {
+	text-align: left;
+}
+.nspArt .tright {
+	text-align: right;
+}
+.nspArt .tcenter {
+	text-align: center;
+}
+.nspArt .tjustify {
+	text-align: justify;
+}
+.nspArt .fleft {
+	float: left;
+}
+.nspArt .fright {
+	float: right;
+}
+.nspArt .fnone {
+	clear: both;
+	width: 100%;
+	float: none;
+}
+.readon.left,
+.readon.right,
+.readon.center {
+	clear: both;
+}
+.readon.left {
+	float: left;
+}
+.readon.right {
+	float: right;
+}
+.readon.center {
+	display: inline;
+	float: none;
+}
+.nspList {
+	float: left;
+}
+.nspLinks ul {
+	padding: 0 !important;
+	list-style-type: none !important;
+}
+.nspLinks ul li {
+	margin: 0 30px 0 0 !important;
+}
+.nspLinks ul li h4 {
+	font-size: 14px;
+}
+.nspLinks ul li h4 a {
+	text-decoration: none;
+}
+.nspLinks ul li p {
+	font-size: 11px;
+	margin: 5px 0;
+}
+
+/* positioning */
+.nspArts.left {
+	float: right;
+}
+.nspLinksWrap.left {
+	float: left;
+}
+.nspArts.right {
+	float: left;
+}
+.nspLinksWrap.right {
+	float: right;
+}
+
+/* make element unvisible */
+.nspMain .unvisible {
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute;
+	top: auto;
+	width: 1px;
+}
+
+/* font-size classes */
+.nspFs80 {
+	font-size: 80%;
+}
+.nspFs90 {
+	font-size: 90%;
+}
+.nspFs100 {
+	font-size: 100%;
+}
+.nspFs110 {
+	font-size: 110%;
+}
+.nspFs120 {
+	font-size: 120%;
+}
+.nspFs130 {
+	font-size: 130%;
+}
+.nspFs140 {
+	font-size: 140%;
+}
+.nspFs150 {
+	font-size: 150%;
+}
+.nspFs160 {
+	font-size: 160%;
+}
+.nspFs170 {
+	font-size: 170%;
+}
+.nspFs180 {
+	font-size: 180%;
+}
+.nspFs190 {
+	font-size: 190%;
+}
+.nspFs200 {
+	font-size: 200%;
+}
+
+/* New responsive layout */
+.gkResponsive {
+	line-height: 1;
+}
+.gkResponsive img.nspImage,
+img.nspImage.gkResponsive {
+	width: 100% !important;
+	height: auto;
+}
+.gkResponsive a,
+a.gkResponsive {
+	display: block;
+	margin: 0 !important;
+	position: relative;
+}
+.gkResponsive {
+	margin-bottom: 12px;
+	position: relative;
+}
+.nspArt img.nspImage {
+	max-width: 100%;
+}
+.nspArtScroll1,
+.nspLinkScroll1 {
+	width: 100%;
+}
+.nspPages1 {
+	width: 100%;
+}
+.nspPages2 {
+	width: 200%;
+}
+.nspPages3 {
+	width: 300%;
+}
+.nspPages4 {
+	width: 400%;
+}
+.nspPages5 {
+	width: 500%;
+}
+.nspPages6 {
+	width: 600%;
+}
+.nspPages7 {
+	width: 700%;
+}
+.nspPages8 {
+	width: 800%;
+}
+.nspPages9 {
+	width: 900%;
+}
+.nspPages10 {
+	width: 1000%;
+}
+.nspCol1 {
+	width: 100%;
+}
+.nspCol2 {
+	width: 50%;
+}
+.nspCol3 {
+	width: 33.3%;
+}
+.nspCol4 {
+	width: 25%;
+}
+.nspCol5 {
+	width: 20%;
+}
+.nspCol6 {
+	width: 16.66%;
+}
+.nspCol7 {
+	width: 14.285%;
+}
+.nspCol8 {
+	width: 12.5%;
+}
+.nspCol9 {
+	width: 11.1%;
+}
+.nspCol10 {
+	width: 10%;
+}
+.nspCol11 {
+	width: 9.09%;
+}
+.nspCol12 {
+	width: 8.33%;
+}
+.nspCol13 {
+	width: 7.69%;
+}
+.nspCol14 {
+	width: 7.14%;
+}
+.nspCol15 {
+	width: 6.66%;
+}
+.nspCol16 {
+	width: 6.25%;
+}
+.nspCol17 {
+	width: 5.88%;
+}
+.nspCol18 {
+	width: 5.55%;
+}
+.nspCol19 {
+	width: 5.26%;
+}
+.nspCol20 {
+	width: 5%;
+}
+
+/* Suffix dark */
+.dark .nspArt h4.nspHeader a {
+	color: #e9e9e9;
+}
+.dark .nspArt h4.nspHeader a:active,
+.dark .nspArt h4.nspHeader a:focus,
+.dark .nspArt h4.nspHeader a:hover {
+	color: #bfbfbf;
+}
+.dark .nspArt p.nspInfo {
+	color: #e9e9e9;
+}
+
+.dark .nspPagination li {
+	background: #bfbfbf;
+}
+.dark .nspPagination li:hover,
+.dark .nspPagination li.active {
+	background: #e9e9e9;
+}
+.dark .nspNext,
+.dark .nspPrev {
+	background-position: -16px -32px;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.dark .nspPrev {
+	background-position: 0 -32px;
+}
+.dark .nspNext:hover,
+.dark .nspPrev:hover {
+	background-position: -16px -48px;
+}
+.dark .nspPrev:hover {
+	background-position: 0 -48px;
+}
+.dark .nspVmStore div.PricesalesPrice span {
+	color: #fff!important;
+}
+.dark .nspVmStore .PricediscountAmount,
+.dark .nspVmStore .PricetaxAmount {
+	color: #eee!important;
+}
+.dark.zoom .nspArt {
+	border-left: 1px solid #444;
+}
+.dark.zoom .nspArt:first-child {
+	border-left: none!important;
+}
+
+/* centernav suffix */
+.centernav .nspTopInterface > div {
+	top: auto !important;
+	bottom: 16px;
+	left: auto !important;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	position: absolute;
+	margin-left: -19px;
+	right: 0 !important;
+}
+.centernav .nspTopInterface ul {
+	display: inline-block;
+	float: none;
+	margin-left: 0 !important;
+}
+.centernav .nspArts {
+	margin-bottom: 20px;
+}
+.centernav .nspTopInterface .nspNext,
+.centernav .nspTopInterface .nspPrev {
+	display: none;
+}
+
+/*
+ * Social GK5
+ */
+
+.gkTweetContent {
+	background: transparent url('../images/style1/twitter_icon.png') no-repeat 0 3px;
+	font-size: 13px;
+	margin: 10px 0 0 0;	
+	text-indent: 34px;
+} 
+
+.gkTweetInfo {
+	color: #565656;
+	font-size: 11px; 
+	font-style: italic;
+}

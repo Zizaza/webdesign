@@ -1,0 +1,122 @@
+/*
+#------------------------------------------------------------------------
+# Creative - July Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+/* Style 3 */
+
+/* template.css */
+a {
+	color: #f299c4;
+}
+#gkLogo.cssLogo {
+	background-image: url('../images/style3/logo.png')!important;
+}
+.gkUsermenu li {
+	background-image: url("../images/style3/typography/bullet-square2.png")!important;
+}
+
+/* joomla.css */
+button:hover,
+input.button:hover,
+span.button:hover,
+button.button:hover,
+div.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:hover {
+	background: #f299c4;
+}
+article aside a:hover {
+	color: #f299c4
+}
+article header h1 a:hover,
+article header h2 a:hover {
+	color: #f299c4;
+}
+p.img_caption {
+	background: #f299c4;
+}
+.tip-title {
+	background: #f299c4;
+}
+#system-message dd.error {
+	background: #f299c4;
+}
+.pagination ul li a:hover {
+	background: #f299c4;
+}
+#article-index li a:hover {
+	color: #f299c4;
+}
+.autocompleter-queried {
+	color: #f299c4 !important;
+}
+
+/* gk_stuff.css */
+.nspPagination li:hover,
+.nspPagination li.active {
+	background: #f299c4;
+}
+.nspNext,
+.nspPrev {
+	background-image: url('../images/style3/nsp_interface.png')!important;
+}
+.nspArt h4.nspHeader a:active,
+.nspArt h4.nspHeader a:focus,
+.nspArt h4.nspHeader a:hover {
+	color: #f299c4;
+}
+.gkTweetContent {
+	background-image: url('../images/style3/twitter_icon.png')!important;
+} 
+
+/* menu.css */
+.gkMenu > ul > li:hover > a,
+.gkMenu > ul > li:active > a,
+.gkMenu > ul > li:focus > a {
+	color: #f299c4;
+}
+.gkMenu > ul > li.active:hover > a,
+.gkMenu > ul > li.active:active > a,
+.gkMenu > ul > li.active:focus > a,
+.gkMenu > ul > li.active > a {
+	background: #f299c4;
+}
+.gkMenu > ul div.childcontent li.active > a,
+.gkMenu > ul div.childcontent li:hover > a,
+.gkMenu > ul div.childcontent li > a:hover {
+	color: #f299c4;
+}
+.gkMenu > ul div.childcontent header {
+	color: #f299c4;
+}
+.gkMenu > ul div.childcontent header a {
+	border-bottom: 2px solid #f299c4;
+}
+
+/* k2.css */
+.itemTags li a:hover {
+	color: #f299c4
+}
+.k2TagCloudBlock a:hover {
+	background: #f299c4;
+}
+.itemNavigation {
+	color: #7D7B7A;
+}
+#itemListLinks li {
+	background-image: url('../images/style3/typography/bullet-square2.png')!important;
+}
+.itemsContainerWrap .itemList figure:hover { 
+	border-color: #f299c4;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked {
+	background: #f299c4;
+}

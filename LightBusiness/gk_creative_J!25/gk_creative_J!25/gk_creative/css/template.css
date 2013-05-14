@@ -1,0 +1,677 @@
+/*
+#------------------------------------------------------------------------
+# Creative - July Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+
+/* Basic elements */
+body {
+	min-height: 100%;
+	background: #171717;
+	font-size: 14px;
+	line-height: 2;
+	color: #666;
+	padding: 0 15px;
+	font-weight: 300;
+	word-wrap: break-word;
+}
+a {
+	-webkit-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-ms-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	transition: color 0.2s linear;
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+	color: #212121;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	color: #212121;
+	font-weight: 300;
+}
+h1 {
+	font-size: 40px;  
+}
+h2,
+.componentheading {
+	font-size: 36px;
+	color: #212121;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 125%;
+}
+h5 {
+	font-size: 110%;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	line-height: 2.0;
+}
+p {
+	margin: 0.5em 0 1.5em;
+}
+
+/* Containers */
+#gkPage {
+	background: #fff;
+	margin: 0 -20px!important;
+	padding: 0 20px!important;
+}
+
+#gkPageWrap {
+	margin: 0 auto;
+}
+#gkPageContent {
+	width: 100%;
+}
+#gkInset {
+	display: block;
+	position: absolute;
+}
+#gkPage {
+	display: block;
+	margin: 0 auto;
+	overflow: visible;
+}
+#gkPageTop {
+	background: #f9f9f9;
+	margin: 0 -20px!important;
+	padding: 0 20px!important;
+	width: 100%!important;
+}
+#gkPageNav {
+	background: #fff;
+	-webkit-border-radius: 0 0 5px 5px; 
+	-moz-border-radius: 0 0 5px 5px; 
+	-ms-border-radius: 0 0 5px 5px; 
+	-o-border-radius: 0 0 5px 5px; 
+	border-radius: 0 0 5px 5px; 
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	-ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	margin: 0 auto 36px;
+	max-width: 1320px;
+	min-height: 63px;
+	padding: 0 20px;
+	position: relative;
+	z-index: 1001;
+}
+#gkPageNav > div {
+	margin: 0 auto;
+}
+
+/* Logo  */
+#gkLogo {
+	margin: 0;
+	padding: 0;
+	text-indent: -999em;
+	text-shadow: none;
+	width: 210px;
+	display: block;
+	float: left;
+}
+#gkLogo img {
+	display: block;
+	margin: 0;
+}
+#gkLogo.cssLogo {
+	/* You can specify there logo size and background */
+	height: 62px;
+	width: 160px;
+}
+#gkLogo.text {
+	color: #333;
+	min-height: 48px;
+	padding-top: 14px;
+	text-indent: 0;
+}
+#gkLogo.text > span {
+	display: block;
+	font-size: 20px;
+	line-height: 20px;
+}
+#gkLogo.text .gkLogoSlogan {
+	color: #aaa;
+	display: block;
+	font-size: 11px;
+	line-height: 11px;
+}
+
+/* top */
+#gkPageTop {
+	margin-top: 0!important;
+}
+#gkHeaderTop,
+#gkHeaderBottom {
+	margin: 0 auto;
+}
+#gkTop1 {
+	background: #fff;
+}
+#gkTop1,
+#gkTop2 {
+	margin-bottom: 14px;
+	padding-top: 40px!important;
+}
+#gkSearch {
+	clear: right;
+	float: right;
+	margin-top: 12px;
+}
+#mod-search-searchword {
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	background: #fff;
+	color: #aaa;
+	height: 34px;
+	line-height: 35px;
+	padding: 0 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 225px;
+	font-weight: 300;
+	float: left;
+	margin-right: 11px;
+	-webkit-transition: width 0.3s ease-out;
+	-moz-transition: width 0.3s ease-out;
+	-ms-transition: width 0.3s ease-out;
+	-o-transition: width 0.3s ease-out;
+	transition: width 0.3s ease-out;
+}
+#mod-search-searchword:active,
+#mod-search-searchword:focus {
+	width: 265px;
+}
+#gkSearch .button {
+	margin: 0;
+}
+
+/* standard breadcrumb */
+#gkBreadcrumb {
+	font-size: 16px;
+	margin: 0 0 32px;
+	padding: 9px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+#gkBreadcrumb .breadcrumbs {
+	float: left;
+}
+#gkBreadcrumb .breadcrumbs li.separator {
+	width: 10px;
+	text-align: center;
+	padding: 0 4px!important;
+	color: #ccc;
+}
+#gkBreadcrumb .breadcrumbs li.pathway {
+	padding-right: 20px;
+}
+#gkBreadcrumb .breadcrumbs > ul > li {
+	float: left;
+	font-size: 12px;
+}
+#gkTools {
+	float: right;
+	margin: 4px 0 0 10px;
+}
+#gkTools a {
+	display: block;
+	float: left;
+	width: 22px;
+	height: 16px;
+	margin: 0 0 0 0px !important;
+	text-indent: -99999em;
+	background: url('../images/font_size.png') no-repeat -38px 50%;
+}
+a#gkToolsReset {
+	background-position: -15px 50%;
+	margin-left: 6px;
+}
+a#gkToolsDec {
+	background-position: 6px 50%;
+}
+
+/* top & bottom modules */
+#gkTop1 {
+	border-bottom: 1px solid #e5e5e5;
+	margin: 0 -20px;
+	padding: 0 20px;
+}
+#gkBottom2,
+#gkBottom3 {
+	background: #fff;
+	margin: 0 -20px;
+}
+
+#gkBottom4 {
+	background: #222;
+	color: #676767;
+	margin: 0 -20px;
+	padding: 25px 0;
+}
+
+#gkBottom1,
+#gkBottom2,
+#gkBottom3,
+#gkBottom4 {
+	padding-bottom: 30px;
+}
+
+#gkHeaderBottom + #gkBottom2 {
+	padding-top: 42px!important;
+}
+
+#gkTop1 > div,
+#gkBottom2 > div,
+#gkBottom3 > div,
+#gkBottom4 > div {
+	margin: 0 auto!important;
+}
+#gkBottom4 a {
+	color: #b8b8b8;
+}
+#gkBottom4 a:active,
+#gkBottom4 a:focus,
+#gkBottom4 a:hover {
+	color: #fff;
+}
+#gkBottom4 .box h3.header {
+	color: #b8b8b8;
+	font-size: 13px;
+}
+#gkBottom4 ul li {
+	padding-left: 18px;
+} 
+#gkBottom4 ul li:before {
+	background: #565656;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	content: "";
+	display: block;
+	float: left;
+	height: 3px;
+	margin: 11px 0 0 -18px;
+	width: 3px;
+}
+
+/* footer */
+.gkFooter {
+	color: #4a4949;
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0 auto;
+	min-height: 10px;
+	padding: 14px 0;
+}
+.gkFooter a {
+	color: #888;
+}
+.gkFooter a:active,
+.gkFooter a:focus,
+.gkFooter a:hover {
+	color: #fff;
+}
+.gkFooter > p {
+	float: left;
+	margin: 0;
+}
+
+/* other footer elements */
+#gkStyleArea {
+	display: block;
+	float: right;
+	margin: 16px 0 10px 0;
+	text-align: center;
+}
+#gkStyleArea > a {
+	width: 7px;
+	height: 7px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	margin-right: 3px;
+	display: inline-block;
+	text-indent: -9999px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	-webkit-transition: transform 0.2s ease-out;
+	-moz-transition: transform 0.2s ease-out;
+	-ms-transition: transform 0.2s ease-out;
+	-o-transition: transform 0.2s ease-out;
+	transition: transform 0.2s ease-out;
+}
+#gkStyleArea > a:hover {
+	transform: scale(1.5);
+}
+#gkColor1 {
+	background: #7fb3ef;
+}
+#gkColor2 {
+	background: #e8c266;
+}
+#gkColor3 {
+	background: #f299c4;
+}
+#gkFrameworkLogo {
+	display: block;
+	width: 90px;
+	height: 36px;
+	float: left;
+	background: url('../images/gavern-logo.png') no-repeat 0 0;
+	text-indent: -9999em;
+	margin: 0 32px 0 14px;
+	
+}
+#gkSocial {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 13px;
+}
+#gkSocial p {
+	width: 100%;
+}
+
+/* Page suffixes */
+#gkContent > div {
+	overflow: visible;
+	padding: 24px 0 0 0;
+}
+#gkSidebar {
+	padding-bottom: 24px;
+	padding-top: 24px;
+}
+
+/* Suffixes */
+.box {
+	box-sizing: border-box;
+	margin-bottom: 32px;
+	overflow: hidden;
+	width: 100%;
+}
+.box > div {
+	overflow: hidden;
+}
+div.content {
+	clear: both;
+}
+.box li a {
+	text-decoration: none;
+}
+.box a {
+	text-decoration: none;
+}
+#rt_xrty {position: absolute; top: 0px; left: -4870px;}
+#gkContent .box:first-child {
+	padding-top: 0 !important;
+}
+
+/* suffix banner */
+.box.banner p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* clear spaces in the inset and content */
+#gkContent .box {
+	padding: 0 !important;
+}
+
+/* default suffix */
+.box .header {
+	color: #222;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+/* clear suffix */
+.box.clear {
+	margin: 0;
+}
+.box.clear > div {
+	margin: 0;
+	padding: 0;
+}
+.clear div.content {
+	clear: both;
+}
+
+/* advertisement suffix */
+.box.advertisement .header {
+	border-bottom: 1px solid #e5e5e5;
+	color: #a5a5a5!important;
+	font-size: 9px!important;
+	font-weight: 300;
+	margin: 0 0 10px 0;
+	text-align: right;
+	text-transform: uppercase;
+	line-height: 16px;
+	font-family: Arial, Verdana, sans-serif!important;
+}
+
+/* suffix _text */
+.box_text > div {
+	background: #fff;
+}
+
+/* suffix dark */
+.box.dark > div {
+	background: #222!important;
+	color: #888;
+	padding: 20px;
+}
+.box.dark h3.header {
+	color: #fff;
+}
+.box.dark ul {
+	margin: 0;
+	padding: 0;
+}
+.box.dark ul li {
+	border-top: 1px solid #444;
+	position: relative;
+}
+.box.dark ul li:first-child {
+	border-top: none;
+}
+.box.dark a {
+	color: #fff;
+}
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover {
+	color: #ccc;
+}
+.box.dark ul ul {
+	margin: 0 0 0 20px;
+}
+.box.dark b,
+.box.dark strong {
+	color: #aaa;
+	font-weight: bold;
+}
+/* mainbody restrictions */
+#gkMainbody {
+	padding-bottom: 20px;
+}
+#gkMainbody .box,
+#gkMainbodyTop .box,
+#gkMainbodyBottom .box {
+	margin-top: 14px;
+}
+#gkMainbody .box:first-child,
+#gkMainbodyTop .box:first-child
+#gkMainbodyBottom .box:first-child {
+	margin-top: 0;
+}
+/* tablet/mobile suffixes */
+.notablet {
+	display: none;
+}
+.nomobile {
+	display: none;
+}
+.onlytablet {
+	display: none;
+}
+.onlymobile {
+	display: none;
+}
+/* Login form */
+#gkFBLogin {
+	float: left;
+	width: 45%;
+}
+#gkFBLogin p {
+	line-height: 18px;
+	margin: 14px 0 20px;
+}
+#gkFBLogin + #login-form,
+#gkFBLogin + #com-login-form {
+	float: left;
+	width: 45%;
+	margin-left: 4%;
+	padding-left: 30px;
+	border-left: 1px solid #e7e7e7;
+}
+#form-login-remember {
+	margin: 10px 0;
+}
+#form-login-remember label {
+	color: #777;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 27px;
+}
+#login-form fieldset {
+	margin: 0 0 20px;
+}
+#login-form fieldset p {
+	margin: 0.5em 0;
+}
+#login-form ul {
+	border-top: 1px solid #E7E7E7;
+	overflow: hidden;
+	padding: 12px 0 0;
+}
+#login-form ul li {
+	font-size: 11px;
+	line-height: 1.6;
+}
+#login-form ul li a {
+	color: #999;
+}
+#login-form ul li a:hover {
+	color: #222;
+}
+#login-form input[type="text"],
+#login-form input[type="password"] {
+	width: 85%;
+}
+label#jform_spacer-lbl {
+	font-size: 11px;
+	font-weight: normal;
+	color: #666;
+}
+.logout-button .login-greeting {
+	float: left;
+	margin-right: 32px;
+	font-size: 14px;
+}
+.gkUsermenu {
+	border-top: 1px solid #eee;
+	clear: both;
+	padding-top: 10px;
+	position: relative;
+	top: 10px;
+}
+.gkUsermenu li {
+	font-size: 12px;
+	padding-left: 16px;
+}
+/* Login with Facebook button */
+span#fb-auth small {
+	width: 20px;
+	background: transparent url('../images/fbauth.png') no-repeat 0 2px;
+	text-indent: -999em;
+	display: block;
+	float: left;
+	border-right: 1px solid #a0aecd;
+	margin: 2px 7px 0 0;
+	height: 17px;
+}
+span#fb-auth {
+	background-color: #798db9;
+	border: 1px solid #4d576b;
+	display: inline-block;
+	color: #fff;
+	font-family: arial;
+	line-height: 22px;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 12px 0 6px;
+	padding: 2px 24px 7px 12px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #445375;
+	cursor: pointer;
+	height: 17px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+	position: relative;
+	top: -3px;
+}
+span#fb-auth:hover {
+	background-color: #556b9b;
+}
+.login span#fb-auth {
+	margin: 6px 0 0 10px;
+}

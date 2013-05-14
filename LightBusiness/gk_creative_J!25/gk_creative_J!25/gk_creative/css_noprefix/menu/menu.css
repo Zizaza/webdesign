@@ -1,0 +1,190 @@
+/*
+#------------------------------------------------------------------------
+# Creative - July Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+/* Base for all menus */
+nav#gkExtraMenu {
+	margin-bottom: 14px;
+}
+#gkMainMenu {
+	clear: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+#gkMainMenu .gkMenu {
+	display: block;
+	float: left;
+}
+.gkMenu > ul > li {
+	float: left;
+	width: auto;
+}
+.gkMenu > ul > li > a {
+	display: block;
+}
+.gkMenu > ul > li a small {
+	display: block;
+	font-size: 11px;
+	line-height: 13px;
+}
+.gkMenu > ul > li > .childcontent,
+.gkMenu > ul > li > .childcontent .childcontent {
+	position: absolute;
+	left: -999em;
+	z-index: 999;
+}
+.gkMenu > ul > li > .childcontent .gkcol {
+	float: left;
+}
+.gkMenu > ul > li:hover > .childcontent,
+.gkMenu > ul > li:hover > .childcontent li:hover > .childcontent {
+	left: inherit;
+}
+.gkMenu > ul > li:hover > .childcontent .childcontent {
+	margin-left: 140px;
+	margin-top: -25px !important;
+}
+
+/* main menu CSS */
+.gkMenu {
+	position: relative;
+	margin: 0;
+	z-index: 1000;
+}
+.gkMenu > ul {
+	height: 32px;
+	margin: 16px 0 0 0;
+	padding: 0;
+}
+.gkMenu > ul > li {
+	height: 32px;
+	font-size: 14px;
+	font-weight: normal;
+	background: transparent;
+	margin: 0;
+}
+.gkMenu > ul > li:first-child {
+	background: none;
+}
+.gkMenu > ul > li > a {
+	color: #444;
+	display: block;
+	height: 32px;
+	line-height: 33px;
+	margin: 0;
+	padding: 0 12px;
+}
+.gkMenu > ul > li:hover > a,
+.gkMenu > ul > li:active > a,
+.gkMenu > ul > li:focus > a {
+	color: #7fb3ef;
+}
+.gkMenu > ul > li.active:hover > a,
+.gkMenu > ul > li.active:active > a,
+.gkMenu > ul > li.active:focus > a,
+.gkMenu > ul > li.active > a {
+	background: #7fb3ef;
+	border-radius: 3px;
+	color: #fff;
+	text-shadow: none;
+}
+.gkMenu > ul ul {
+	margin: 0;
+	padding: 0;
+}
+.gkMenu > ul div.childcontent {
+	padding-top: 10px!important;
+	margin-top: 0;
+}
+.gkMenu > ul div.childcontent div.childcontent {
+	padding-top: 0!important;
+}
+.gkMenu > ul div.childcontent-inner {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	text-align: left;
+}
+.gkMenu > ul div.childcontent-inner div.childcontent-inner {
+	margin-top: -18px!important;
+}
+.gkMenu > ul div.childcontent-inner div.childcontent-inner div.childcontent-inner {
+	margin-top: 0!important;
+}
+.gkMenu > ul > li > .childcontent .gkcol {
+	padding-bottom: 0;
+}
+.gkMenu > ul div.childcontent li {
+	margin: 0 16px;
+	border-top: 1px solid #eee;
+	
+}
+.gkMenu > ul div.childcontent li:first-child { 
+	border: none;
+}
+
+.gkMenu > ul div.childcontent a {
+	font-size: 12px;
+	font-family: arial;
+	color: #333;
+	display: block;
+	min-height: 24px;
+	font-weight: normal;
+	padding: 8px;
+}
+.gkMenu > ul div.childcontent small {
+	color: #a5a5a5;
+	font-size: 11px;
+	font-weight: 300;
+	margin: 0 0 6px;
+}
+.gkMenu > ul div.childcontent li.group {
+	padding: 0;
+	margin: 0;
+	height: auto;
+	border: none !important;
+	background: none;
+}
+.gkMenu > ul div.childcontent li.active > a,
+.gkMenu > ul div.childcontent li:hover > a,
+.gkMenu > ul div.childcontent li > a:hover {
+	color: #7fb3ef;
+}
+.gkMenu > ul div.childcontent header {
+	padding: 10px 24px 6px;
+	display: block;
+	color: #7fb3ef;
+	
+	margin: 0;
+	font-weight: 400!important;
+}
+.gkMenu > ul div.childcontent header a {
+	color: #212121;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 0 4px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #7FB3EF;
+}
+.gkMenu > ul div.childcontent header small {
+	display: block;
+	text-transform: none;
+}
+#gkMainMenu .module p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/* hide mobile menu */
+#gkMobileMenu {
+	display: none;
+}

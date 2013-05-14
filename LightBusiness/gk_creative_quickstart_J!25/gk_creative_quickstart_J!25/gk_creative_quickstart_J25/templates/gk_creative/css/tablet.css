@@ -1,0 +1,299 @@
+/*
+#------------------------------------------------------------------------
+# Creative - July Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+
+#gkContent, 
+#gkSidebar {
+	width: 100% !important;
+}
+#gkSidebar {
+	padding: 16px 0 0 0!important;
+}
+#gkSidebar > div > .box {
+	float: left;
+	margin-top: 0!important;
+	margin-bottom: 12px!important;
+	width: 50%;
+}
+#gkSidebar > div > .box:nth-child(2n+1) {
+	clear: both!important;
+}
+#gkSidebar > div > .box:nth-child(odd) {
+	padding-right: 10px;	
+}
+#gkSidebar > div > .box:nth-child(even) {
+	padding-left: 10px;
+}
+
+/* Footer adjustments */
+.gkFooter {
+	text-align: center;
+}
+.gkFooter > * {
+	display: inline-block!important;
+	float: none!important;
+}
+
+/* Limitation suffixes */
+.box.notablet {
+	display: none!important;
+}
+.box.nomobile {
+	display: block!important;
+}
+.box.onlytablet {
+	display: block!important;
+}
+.box.onlymobile {
+	display: none!important;
+}
+
+/* Fix for the contact page */
+.contact .contact-image {
+	float: left !important;
+}
+.contact .contact-address {
+	clear: both !important;
+	padding-top: 20px !important;
+}
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"],
+.contact .contact-form textarea {
+	width: 100% !important;
+}
+
+/* K2 edit popup */
+#sbox-window,
+#sbox-window iframe {
+	width: 720px!important;
+	max-width: 720px!important;
+	left: 10px!important;
+}
+
+/* top/bottom modules */
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	float: left!important;	
+}
+.box.gkmod-1 {
+	width: 100%!important;	
+}
+.box.gkmod-2 {
+	width: 50%!important;
+}
+.box.gkmod-3 {
+	width: 50%!important;
+}
+.box.gkmod-3:nth-child(3) {
+	clear: both!important;
+	width: 100%!important;
+}
+.box.gkmod-4,
+.box.gkmod-more {
+	width: 50%!important;
+}
+.box.gkmod-4:nth-child(2n+1),
+.box.gkmod-more:nth-child(2n+1) {
+	clear: both!important;
+}
+.box.gkmod-more.gkmod-last-1:last-child {
+	width: 100%!important;
+}
+.box.gkmod-more.gkmod-last-2:last-child,
+.box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 50%!important;
+}
+#gkPageWrap .box.gkmod-more.gkmod-last-3:last-child {
+	width: 100%!important;
+}
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 50%!important;
+}
+
+/* bottom2 modules */
+#gkBottom2 .box.gkmod-1,
+#gkBottom2 .box.gkmod-2,
+#gkBottom2 .box.gkmod-3,
+#gkBottom2 .box.gkmod-4,
+#gkBottom2 .box.gkmod-more {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Typography */
+.gkFeature {
+	padding: 0 10px 0 0!important;
+}
+.gkFeature + .gkFeature {
+	padding: 0 10px!important;
+}
+.gkFeature + .gkFeature + .gkFeature {
+	padding: 0 0 0 10px!important;
+}
+.gkFeature h2 {
+	font-size: 16px!important;
+}
+.gkFeature small {
+	font-size: 12px!important;
+}
+.gkBannerWithButton {
+	font-size: 15px!important;
+	line-height: 60px!important;
+	padding: 0 20px!important;
+}
+.gkBannerWithButton a {
+	border: 3px solid #fff!important;
+	-webkit-border-radius: 5px!important;
+	-moz-border-radius: 5px!important;
+	-o-border-radius: 5px!important;
+	border-radius: 5px!important;
+	height: 32px!important;
+	line-height: 33px!important;
+	margin-top: 12px!important;
+	padding: 0 18px!important;
+}
+.gkTestimonial p {
+	font-size: 12px!important;
+	line-height: 18px!important;
+}
+.gkTestimonial cite {
+	font-size: 13px!important;
+}
+.gkBannerHeader {
+	font-size: 26px!important;
+}
+.gkClients {
+	max-width: 580px!important;
+	margin: 0 auto!important;
+}
+.gkPriceTable dl {
+	font-size: 12px!important;
+}
+.gkPriceTable dl.extra {
+	margin: 0!important;
+}
+.gkPriceTable dt,
+.gkPriceTable dl.extra dt {
+	font-size: 24px!important;
+	height: 50px!important;
+	line-height: 50px!important;
+}
+.gkPriceTable dd.price {
+	font-size: 50px!important;
+	height: 120px!important;
+	line-height: 120px!important;
+}
+.gkPriceTable dl.extra dd.price {
+	font-size: 50px!important;
+	height: 128px!important;
+	line-height: 128px!important;
+}
+.gkPriceTable dd.price sup {
+	font-size: 30px!important;
+}
+.gkPriceTable dl.extra dd.price sup {
+	font-size: 32px!important;
+}
+.gkPriceTable dd.price small {
+	font-size: 12px!important;
+}
+.gkPriceTable dd {
+	line-height: 32px!important;
+}
+.gkPriceTable dl.extra dd {
+	line-height: 36px!important;
+}
+.gkPriceTable .button {
+	font-size: 14px!important;
+	height: 30px!important;
+	line-height: 31px!important;
+}
+
+/* Header */
+.gk-parallax-wrap {
+	left: -9999px!important;
+	position: absolute!important;
+}
+.gkp-mobile {
+	left: -9999px;
+	position: absolute;
+}
+.gkp-tablet {
+	left: 0!important;
+	position: static!important;
+}
+#gkHeaderTop,
+#gkHeaderBottom,
+#gkHeaderTop .gkp-tablet,
+#gkHeaderBottom .gkp-tablet {
+	margin: 0 -20px!important;
+	padding: 0 20px!important;
+	width: 100%!important;
+}
+#gkHeaderTop .gk-parallax {
+	height: 529px!important;
+}
+#gkHeaderTop .gkp-tablet {
+	background: transparent url('../images/responsive/parallax_tablet_top.jpg') no-repeat center 0!important;
+	height: 529px!important;
+	text-indent: -9999px;
+}
+#gkHeaderBottom .gk-parallax {
+	height: 529px!important;
+}
+#gkHeaderBottom .gkp-tablet {
+	background: transparent url('../images/responsive/parallax_tablet_bottom.jpg') no-repeat center 0!important;
+	height: 542px;
+	text-indent: -9999px;
+}
+
+/* menu */
+#gkMobileMenu {
+	background: transparent url('../images/tablet_menu_btn.png') no-repeat 16px center;
+	margin-top: 5px;
+}
+#gkPageTop {
+	background: #fff;
+}
+#gkExtraMenu {
+	display: none!important;
+}
+#gkMainMenu {
+	border: none!important;
+	clear: none!important;
+	float: left;
+	text-indent: 15px;
+	width: 64px!important;
+}
+#gkMainMenu select {
+	width: 64px;
+	height: 45px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#gkMobileMenu {
+	display: block!important;
+	font-size: 18px;
+	height: 52px;
+	line-height: 44px;
+	position: relative;
+	width: 64px;
+	text-indent: -9999px;
+}
