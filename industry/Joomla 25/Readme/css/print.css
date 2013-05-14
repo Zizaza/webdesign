@@ -1,0 +1,53 @@
+body { 
+font-size:12px;color:#333;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+height:100%;
+margin:0;
+padding:0;
+line-height:1.6;
+
+
+} 
+.wrapper{
+margin:0 auto;
+width:900px;
+background:#FFFFFF;
+text-align:center;
+height:auto;
+min-height:100%;
+}
+.content{ margin:20px; margin-bottom:40px; width:856px; text-align:left; border-bottom:1px dotted #ccc}
+.lastcontent{ margin:20px; margin-bottom:0; width:856px; text-align:left; border-bottom:1px dotted #ccc}
+
+.info{ display:block; margin:10px 0 20px 0; padding:14px; padding-left:60px; text-align:left; border:1px dotted #d2d2b6; background:#ffffdd url(../images/attention.png) 10px no-repeat;}
+.pdf{ display:block; margin:10px 0 20px 0; padding:14px; padding-left:60px; text-align:left; border:1px dotted #d2d2b6; background:#edf3f8 url(../images/info.png) 10px no-repeat;}
+.attention{ display:block; margin:10px 0 20px 0; padding:14px; padding-left:60px; text-align:left; border:1px dotted #d2d2b6; background:#fffff7 url(../images/error.png) 10px no-repeat;}
+
+.row{ background:#f9f9f9; padding:20px; width:230px;}
+.grey{ background:#f9f9f9; padding:20px; width:816px; margin-bottom:20px;}
+.nogrey{ width:100%; margin-bottom:20px;}
+
+.left{float:left;}
+.right{float:right;}
+.clear { clear:both; } 
+.code{	display:block;background:#f2f2f2;	border-left:3px solid #999;margin-left:20px;color:#000;	padding:4px;}
+ul li{line-height:1.6}
+ul.features {padding:0;margin:0;float:right;width:400px;display:block;}
+
+ul.features li {float:left;width:47%;margin:.5%;padding:1%;list-style: none;background-color: #f9f9f9;font-size:11px;}
+
+a:link,a:visited{  text-decoration:underline; color:#000;}
+
+a:hover{color:#333;text-decoration:underline;}
+.imgpadding{padding:3px;border:1px solid #ccc;margin-bottom:20px;}
+
+/************** Typography styles **************/
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#333; margin:0; padding:0; line-height:1em;}
+h1 {font-size:3em; color:#333; font-weight: normal; margin:10px 0 20px 0;}
+h2 {font-size:2em; color:#333; letter-spacing:2px;margin:10px 0 20px 0;}
+h3 {font-size:1.4em;line-height:1;margin-bottom:.1em; font-weight: bold; color:#333; display:block;}
+h4 {font-size:1.2em;line-height:1.25;margin-top:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+.small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
+.centered {text-align: center;}
